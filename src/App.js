@@ -25,6 +25,8 @@ const App = () => {
 
   return (
     <div className="App">
+    {data && <Character data={data}></Character>}
+    {console.log(data)}
     </div>
   );
 }
