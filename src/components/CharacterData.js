@@ -10,8 +10,8 @@ return (
     <div>
         <button onClick={toggle} style={{ marginBottom: '1rem' }}> {name} 
         </button> 
-        <collapse isOpen={isOpen} {...props}>
-         <card>
+        {/* < isOpen={isOpen} {...props}> */}
+         <ul>
             <li>
                 Name: { name }
             </li>
@@ -36,8 +36,8 @@ return (
             <li>
                 Skin Color: {skin_color}
             </li>
-         </card>
-        </collapse>
+         </ul>
+        {/* </collapse> */}
     </div>
 );
 }
