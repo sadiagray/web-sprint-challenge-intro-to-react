@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import {Button, Collapse, Card, CardBody} from 'reactstrap';
 
 function CharacterData (props) {
 const { name, height, eye_color, gender, mass, birth_year, hair_color, skin_color} = props;
@@ -9,12 +8,10 @@ const toggle = () => setIsOpen(!isOpen)
 
 return (
     <div>
-        <Button onClick={toggle} style={{ marginBottom: '1rem' }}> 
-        { name }
-        </Button>
-        <Collapse isOpen={isOpen} {...props}>
-         <Card>
-          <CardBody>
+        <button onClick={toggle} style={{ marginBottom: '1rem' }}> {name} 
+        </button> 
+        <collapse isOpen={isOpen} {...props}>
+         <card>
             <li>
                 Name: { name }
             </li>
@@ -39,9 +36,8 @@ return (
             <li>
                 Skin Color: {skin_color}
             </li>
-          </CardBody>
-         </Card>
-        </Collapse>
+         </card>
+        </collapse>
     </div>
 );
 }
