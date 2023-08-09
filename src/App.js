@@ -15,7 +15,7 @@ const App = () => {
   },[])
   return (
     <div className="App">
-    {data.map(element => {return <CharacterData key={element.id} data={data}/> 
+    {data.map(element => {return <CharacterData key={element.id} data={element}/> 
             })}
     </div>
   );

@@ -1,40 +1,40 @@
 import React, { useState } from "react";
 
 function CharacterData (props) {
-const { name, height, eye_color, gender, mass, birth_year, hair_color, skin_color} = props;
-const [isOpen, setIsOpen] = useState(false);
-const toggle = () => setIsOpen(!isOpen)
+const {data} = props;
+// const [isOpen, setIsOpen] = useState(false);
+// const toggle = () => setIsOpen(!isOpen)
 
 
 return (
     <div>
-        <button onClick={toggle} style={{ marginBottom: '1rem' }}> {name} 
-        </button> 
+        {/* <button onClick={toggle} style={{ marginBottom: '1rem' }}> {data.name}  */}
+        {/* </button>  */}
         {/* < isOpen={isOpen} {...props}> */}
          <ul>
             <li>
-                Name: { name }
+                Name: { data.name }
             </li>
             <li>
-                gender: {gender}
+                gender: {data.gender}
             </li>
             <li>
-                Height: {height}
+                Height: {data.height}
             </li>
             <li>
-                Mass: {mass}
+                Mass: {data.mass}
             </li>
             <li>
-                BirthYear: {birth_year}
+                BirthYear: {data.birth_year}
             </li>
             <li>
-                Eye Color: {eye_color}
+                Eye Color: {data.eye_color}
             </li>
             <li>
-                Hair Color: {hair_color}
+                Hair Color: {data.hair_color}
             </li>
             <li>
-                Skin Color: {skin_color}
+                Skin Color: {data.skin_color}
             </li>
          </ul>
         {/* </collapse> */}
